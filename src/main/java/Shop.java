@@ -1,5 +1,4 @@
 import behaviours.ISell;
-import instruments.Violin;
 
 import java.util.ArrayList;
 
@@ -17,5 +16,9 @@ public class Shop {
 
     public ArrayList<ISell> getStock() {
         return stock;
+    }
+
+    public void removeItemFromStock(ISell item) {
+        stock.remove(item);
     }
 }
